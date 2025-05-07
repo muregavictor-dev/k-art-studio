@@ -424,3 +424,87 @@ footer {
     padding: 20px;
   }
 }
+/* Extra Small Devices (phones < 480px) */
+@media (max-width: 480px) {
+  header {
+    padding: 60px 15px;
+  }
+
+  header h1 {
+    font-size: 2.4rem;
+  }
+
+  header p {
+    font-size: 1.2rem;
+  }
+
+  header img {
+    width: 120px;
+    margin-top: 20px;
+  }
+
+  nav a {
+    font-size: 1.2rem;
+    margin: 5px 8px;
+  }
+
+  .slider {
+    height: 280px;
+  }
+
+  .slides img {
+    height: 280px;
+  }
+
+  .container {
+    padding: 30px 10px;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  .services-grid,
+  .gallery-grid {
+    padding: 10px;
+    margin-left: 0;
+  }
+
+  .card {
+    margin: 10px 0;
+    padding: 15px;
+  }
+
+  .card img {
+    height: 160px;
+  }
+
+  .card h3 {
+    font-size: 1.5rem;
+  }
+
+  .card p {
+    font-size: 1.2rem;
+  }
+
+  button,
+  input[type="submit"] {
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 12px;
+    margin-top: 10px;
+  }
+
+  form input,
+  form textarea {
+    font-size: 1.2rem;
+  }
+
+  .socials a {
+    font-size: 1.2rem;
+  }
+
+  footer {
+    font-size: 1.1rem;
+  }
+}
