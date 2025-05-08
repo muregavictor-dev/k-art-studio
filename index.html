@@ -30,7 +30,43 @@
     <a href="contact.html">Contact</a>
 </nav>
 
+<!-- <div class="slider">
+    <div class="slides">
+        <img src="https://via.placeholder.com/20x20?text=..." data-src="retgr5y.jpg" class="lazyload" width="350px" alt="Photography sample 1">
+        <img src="https://via.placeholder.com/20x20?text=..." data-src="0cb40fdcf8e6de7a4cf546374a788c93.jpg" class="lazyload" width="350px" alt="Photography sample 2">
+        <img src="https://via.placeholder.com/20x20?text=..." data-src="8dedcec0b90aede0e6dfe58f4ee223a8.jpg" class="lazyload" width="350px" alt="Photography sample 3">
+        <img src="https://via.placeholder.com/20x20?text=..." data-src="9911e1d1f857d908e7415027170c8f82.jpg" class="lazyload" width="350px" alt="Photography sample 4">
+        <img src="https://via.placeholder.com/20x20?text=..." data-src="1735715082319.jpg" class="lazyload" width="350px" alt="Photography sample 5">
+        <img src="https://via.placeholder.com/20x20?text=..." data-src="2dewd.jpg" class="lazyload" width="350px" alt="Photography sample 6">
+        <img src="https://via.placeholder.com/20x20?text=..." data-src="DSC_0593.jpg" class="lazyload" width="350px" alt="Photography sample 7">
+        <img src="https://via.placeholder.com/20x20?text=..." data-src="rryr5y5y.jpg" class="lazyload" width="350px" alt="Photography sample 8">
+        <img src="https://via.placeholder.com/20x20?text=..." data-src="rtefgtg.jpg" class="lazyload" width="350px" alt="Photography sample 9">
+        <img src="https://via.placeholder.com/20x20?text=..." data-src="sdcsdcdsc.jpg" class="lazyload" width="350px" alt="Photography sample 10">
+    </div>
+    <button class="prev" onclick="prevSlide()">&#10094;</button>
+    <button class="next" onclick="nextSlide()">&#10095;</button>
+</div>
 
+<script>
+let currentIndex = 0;
+const slides = document.querySelector('.slides');
+const totalSlides = document.querySelectorAll('.slides img').length;
+
+function showSlide(index) { -->
+    currentIndex = (index + totalSlides) % totalSlides;
+    slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+}
+
+function nextSlide() {
+    showSlide(currentIndex + 1);
+}
+
+function prevSlide() {
+    showSlide(currentIndex - 1);
+}
+
+setInterval(nextSlide, 3000);
+</script>
 
 <div class="container">
     <section id="about">
